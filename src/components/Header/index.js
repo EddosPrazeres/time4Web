@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import './Header.scss'
+import {withRouter} from 'react-router-dom'
 class Header extends Component {
   constructor(props){
     super(props)
@@ -17,41 +18,20 @@ class Header extends Component {
 
           <div
             className={'Header-right-button'}
-            // highlight={props.highlight}
-            // onClick={() => console.log("click")}
+            highlight={this.props.Start}
+            onClick={() => this.props.history.push('/')}
           >
             <span>
-              Button 1
+              Sobre nós
             </span>
           </div>
-
           <div
             className={'Header-right-button'}
-            // highlight={props.highlight}
-            // onClick={() => console.log("click")}
+            highlight={this.props.Indicator}
+            onClick={() => this.props.history.push('/Indicator')}
           >
             <span>
-              Button 2
-            </span>
-          </div>
-
-          <div
-            className={'Header-right-button'}
-            // highlight={props.highlight}
-            // onClick={() => console.log("click")}
-          >
-            <span>
-              Button 3
-            </span>
-          </div>
-
-          <div
-            className={'Header-right-button'}
-            // highlight={props.highlight}
-            // onClick={() => console.log("click")}
-          >
-            <span>
-              Button 3
+              Seja um indicador
             </span>
           </div>
         </div>
@@ -68,4 +48,4 @@ Header.propTypes = {
 
 }
 
-export default Header
+export default withRouter(Header)

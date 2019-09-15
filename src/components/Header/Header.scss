@@ -4,11 +4,15 @@ $animate: all 0.2s ease-in-out;
 $colorUnderLine: #eaebed;
 // #454851 #eaebed #0f5d82 #1983b5 #d8d4d5
 .Header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 16px;
-
+  width: calc(100% - 32px);
   height: 66px;
   background-color: #1983b5;
 
