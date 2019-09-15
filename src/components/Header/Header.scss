@@ -1,0 +1,85 @@
+$main-color: black;
+
+$animate: all 0.2s ease-in-out;
+$colorUnderLine: #eaebed;
+// #454851 #eaebed #0f5d82 #1983b5 #d8d4d5
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+
+  height: 66px;
+  background-color: #1983b5;
+
+  &-left {
+    background-color: blue;
+    height: 50px;
+    width: 100px;
+  }
+
+  &-right {
+    display: flex;
+
+    &-button {
+      margin: 0 16px;
+      span {
+        transition: $animate;
+        position: relative;
+        transition-duration: 1s;
+        white-space: nowrap;
+        color: #eaebed;
+        font-weight: 400;
+        &:before,
+        &:after {
+          content: '';
+          position: absolute;
+          bottom: -5px;
+          width: 0px;
+          height: 2px;
+          margin: 5px 0 0;
+          transition: $animate;
+          transition-duration: 0.2s;
+          opacity: 0;
+        }
+
+        
+        &:before {
+          left: calc(50%);
+          background-color: $colorUnderLine;
+        }
+        &:after {
+          right: calc(50%);
+          background-color: $colorUnderLine;
+        }
+        
+      }
+
+      &:hover,
+      &[highlight='on'] {
+        cursor: pointer;
+        span {
+          &:before,
+          &:after {
+            width: 50%;
+            opacity: 1;
+          }
+          span {
+            &:before,
+            &:after {
+              width: 50%;
+            }
+          }
+        }
+      }
+    }
+
+    :last-child{
+      margin-right: 0;
+    }
+
+    :first-child  {
+      margin-left: 0;
+    }
+  }
+}
