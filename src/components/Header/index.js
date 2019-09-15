@@ -27,13 +27,23 @@ class Header extends Component {
           </div>
           <div
             className={'Header-right-button'}
+            highlight={this.props.Regulation}
+            onClick={() => this.props.history.push('/Regulation')}
+          >
+            <span>
+              Regulamento
+            </span>
+          </div>
+
+          <div
+            className={'Header-right-button'}
             highlight={this.props.Indicator}
             onClick={() => this.props.history.push('/Indicator')}
           >
             <span>
               Seja um indicador
             </span>
-          </div>
+          </div>          
         </div>
       </div>
     )
