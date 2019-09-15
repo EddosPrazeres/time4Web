@@ -16,21 +16,20 @@ export const Creators = {
       payload: response,
     }
   },
-  postLife: id => {
+  postLife: (name, cpf, sexo, dataNascimento, profissao, renda, uf, influencerName) => {
     const response = axios.post(`http://10.212.0.152:3000/new_quote/type/seguro-de-vida`, {
       "data": {"proponente": {
             "tipoRelacaoSeguradoId": 1,
-            "nome": "string",
-            "cpf": "15547399779",
-            "dataNascimento": "2019-09-15",
+            "nome": name,
+            "cpf": cpf,
+            "dataNascimento": dataNascimento,
             "profissaoCbo": "2410-05",
-            "renda": 113,
+            "renda": renda,
             "sexoId": 1,
-            "uf": "rj",
+            "uf": uf,
             "declaracaoIRId": 1
           }},
-      "influencer_name": "Ed"
-      
+      "influencer_name": influencerName     
     })
     return {
       type: Types.POST_LIFE,
@@ -64,27 +63,36 @@ export const Creators = {
 }
 
 const INITIAL_STATE = {
-  postTrip: null,
-  postLife: null,
-  specificInsurer: null,
+  postTripData: null,
+  postLifeData: null,
+  specificInsurerData: null,
 }
 
 export default function Insurer(state = INITIAL_STATE, action) {
   
   switch (action.type) {
     case Types.POST_TRIP: 
-    console.log("Insurer POST_TRIP", action.payload.data)
+      return {
+        ...state,
+        postTripData: action.payload.data
+      }
       return state;
     break;
 
     case Types.POST_LIFE: 
     console.log("Insurer POST_LIFE", action.payload.data)
-      return state;
+    return {
+      ...state,
+      postLifeData: action.payload.data
+    }
     break;
 
     case Types.GET_INSURER: 
     console.log("Insurer GET_INSURER", action.payload.data)
-      return state;
+    return {
+      ...state,
+      specificInsurerData: action.payload.data
+    }
     break;
     
     default:

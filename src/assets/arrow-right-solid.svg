@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 22 22">
+    <defs>
+        <rect id="b" width="460" height="430" rx="10"/>
+        <filter id="a" width="103%" height="103.3%" x="-1.5%" y="-1.2%" filterUnits="objectBoundingBox">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.86065051 0 0 0 0 0.86065051 0 0 0 0 0.86065051 0 0 0 1 0"/>
+        </filter>
+        <path id="d" d="M0 0h460v50c0 5.523-4.477 10-10 10H10C4.477 60 0 55.523 0 50V0z"/>
+        <filter id="c" width="103%" height="123.3%" x="-1.5%" y="-8.3%" filterUnits="objectBoundingBox">
+            <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.86065051 0 0 0 0 0.86065051 0 0 0 0 0.86065051 0 0 0 1 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(-423 -394)">
+            <use fill="#000" filter="url(#a)" xlink:href="#b"/>
+            <use fill="#FFF" xlink:href="#b"/>
+        </g>
+        <g transform="translate(-423 -24)">
+            <use fill="#000" filter="url(#c)" xlink:href="#d"/>
+            <use fill="#1983B5" xlink:href="#d"/>
+        </g>
+        <path fill="#0F5D82" fill-rule="nonzero" d="M9.334 1.502L10.422.387a1.151 1.151 0 0 1 1.66 0l9.526 9.76c.46.471.46 1.235 0 1.702l-9.525 9.764a1.151 1.151 0 0 1-1.661 0l-1.088-1.115a1.228 1.228 0 0 1 .02-1.723l5.904-5.766H1.176C.524 13.01 0 12.472 0 11.804v-1.608c0-.668.524-1.205 1.176-1.205h14.082L9.354 3.225a1.22 1.22 0 0 1-.02-1.723z"/>
+    </g>
+</svg>
