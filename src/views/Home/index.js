@@ -1,5 +1,7 @@
 import React, { Component, Fragment } from 'react'
 import { connect } from 'react-redux'
+import {Creators as InsurerActions} from '../../redux/reducers/Insurer'
+
 import PropTypes from 'prop-types'
 import { Header, Footer } from '../../components'
 import imgStep1 from '../../assets/step1.svg'
@@ -17,6 +19,12 @@ class Home extends Component {
     this.state = {
 
     }
+  }
+
+  componentDidMount = () => {
+    // this.props.postLife();
+    // this.props.postTrip();
+    // this.props.getInsurer(1);
   }
 
   render(){
@@ -86,4 +94,4 @@ const mapStateToProps = state => {
   }
 }
 
-export default connect(mapStateToProps)(Home)
+export default connect(mapStateToProps, {...InsurerActions})(Home)
