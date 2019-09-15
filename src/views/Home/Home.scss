@@ -1,9 +1,10 @@
 .Home {
+    position: relative;
     background-color: #fbfbfb;
     min-height: 100vh;
     padding: 32px;
     padding-top: 66px;
-
+    z-index: 1;
     &-content {
 
         &-image {
