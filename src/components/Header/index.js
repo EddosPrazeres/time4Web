@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import './Header.scss'
 import {withRouter} from 'react-router-dom'
+import imgLogo from '../../assets/4-t.svg'
 class Header extends Component {
   constructor(props){
     super(props)
@@ -13,7 +14,7 @@ class Header extends Component {
   render(){
     return(
       <div className="Header">
-        <div className="Header-left"></div>
+        <img className="Header-left" src={imgLogo} onClick={() => this.props.history.push('/')}/>
         <div className="Header-right">
 
           <div

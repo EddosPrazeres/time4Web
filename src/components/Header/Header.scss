@@ -18,9 +18,8 @@ $colorUnderLine: #eaebed;
   box-shadow: 0px 0px 5px rgba(0,0,1,0.5);
   z-index: 1;
   &-left {
-    background-color: blue;
-    height: 50px;
-    width: 100px;
+    height: 30px;     
+    cursor: pointer;
   }
 
   &-right {

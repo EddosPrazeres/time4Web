@@ -3,7 +3,9 @@ import { connect } from 'react-redux'
 import PropTypes from 'prop-types'
 import { Header, Footer } from '../../components'
 import './Indicator.scss'
-
+import imgHouse from '../../assets/housestep.svg'
+import imgConnection from '../../assets/stepconnection.svg'
+import imgMobile from '../../assets/stepmobile.svg'
 class Indicator extends Component {
 
   constructor(props){
@@ -27,9 +29,21 @@ class Indicator extends Component {
 
             <div className="Indicator-content-tutorial"> 
               <div className="Indicator-content-tutorial-title">Como funciona?</div>
-              <div className="Indicator-content-tutorial-item"> 
-                <img className="Indicator-content-tutorial-item-image" src={""} />                
-                <div className="Indicator-content-tutorial-item-text"> Autônomos se cadastram na 4Team para se tornar um indicador e compartilhar os seguros.</div>
+              <div className="Indicator-content-tutorial-items">
+                <div className="Indicator-content-tutorial-items-item"> 
+                  <img className="Indicator-content-tutorial-items-item-image" src={imgMobile} />                
+                  <div className="Indicator-content-tutorial-items-item-text"> Você baixa nosso aplicativo e se cadastra como propagador  de seguros.</div>
+                </div>
+
+                <div className="Indicator-content-tutorial-items-item"> 
+                  <img className="Indicator-content-tutorial-items-item-image" src={imgConnection} />                
+                  <div className="Indicator-content-tutorial-items-item-text">Assim que seu cadastro é aprovado, você já pode começar a compartilhar seu link com amigos, ou qualquer outra pessoa. </div>
+                </div>
+
+                <div className="Indicator-content-tutorial-items-item"> 
+                  <img className="Indicator-content-tutorial-items-item-image" src={imgHouse} />                
+                  <div className="Indicator-content-tutorial-items-item-text">Cada vez que uma indicação sua converter em contratação, te garantimos uma comissão.</div>
+                </div>
               </div>
             </div>
           </div>
