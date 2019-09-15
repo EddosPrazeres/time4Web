@@ -14,6 +14,7 @@ class TripView extends Component {
     return(
       <div>
         123
+        {console.log("123", this.props)}
       </div>
     )
   }

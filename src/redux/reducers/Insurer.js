@@ -29,14 +29,14 @@ export const Creators = {
             "uf": uf,
             "declaracaoIRId": 1
           }},
-      "influencer_name": influencerName     
+      "influencer_name": "Vanesso Pudinic"     
     })
     return {
       type: Types.POST_LIFE,
       payload: response,
     }
   },
-  postTrip: id => {
+  postTrip: () => {
     const response = axios.post(`http://10.212.0.152:3000/new_quote/type/seguro-viagem` ,{ 
       "data": {
           "destinos": [
@@ -53,7 +53,7 @@ export const Creators = {
           "tipoViagem": 1,
           "tipoTarifa": 1
       },
-      "influencer_name": "Ed"
+      "influencer_name": "Vanesso Pudinic"
     })
     return {
       type: Types.POST_TRIP,
