@@ -17,6 +17,9 @@
         &-button {
             margin: 0 8px;
             cursor: pointer;
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
 
@@ -61,8 +64,7 @@
 
         flex: 1;
         display: flex;
-        align-items: flex-end;
-      
+        align-items: flex-end;    
     }
 }
 // #454851 #eaebed #0f5d82 #1983b5 #d8d4d5

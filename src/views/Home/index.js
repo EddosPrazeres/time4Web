@@ -7,6 +7,7 @@ import imgStep2 from '../../assets/step2.svg'
 import imgStep3 from '../../assets/step3.svg'
 import imgStep4 from '../../assets/step4.svg'
 import imgSystem from '../../assets/group-5.svg'
+import imgBanner from '../../assets/rectangle-2.png'
 import './Home.scss'
 
 class Home extends Component {
@@ -25,7 +26,11 @@ class Home extends Component {
           <Header Start={"on"}/>
   
           <div className="Home-content"> 
-            <img className="Home-content-image" src={""}/> 
+            <div className="Home-content-image">
+              <img src={imgBanner}/> 
+              {/* <div className="Home-content-image-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tincidunt, orci quis facilisis sollicitudin, augue lorem cursus sem, nec egestas ante </div> */}
+              <div class='icon-scroll'></div>
+            </div>
             <div className="Home-content-system">
               <div className="Home-content-system-left">
                 <div className="Home-content-system-left-title">ECOSSISTEMA 4TEAM</div>

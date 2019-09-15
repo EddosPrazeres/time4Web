@@ -20,32 +20,24 @@ class Regulation extends Component {
           <Header Regulation={"on"}/>     
 
           <div className="Regulation-rules">
-              <div className="Regulation-rules-rule">
-                <div className="Regulation-rules-rule-title">1. Definição</div>
-                <div className="Regulation-rules-rule-text">A 4Team é uma maneira simples de conseguir uma grana extra para quem indica seguros para sua rede de amigos e familiares. Juridicamente constituída como uma plataforma, a 4Team é responsável por:</div>
-              </div>
-          
-                A 4Team é uma maneira simples de conseguir uma grana extra para quem indica seguros para sua rede de amigos e familiares. Juridicamente constituída como uma plataforma, a 4Team é responsável por:
+            <div className="Regulation-rules-title">Regulamento</div>
 
-                1.	Avaliar a entrada de cada membro criando uma comunidade confiável;
-                2.	Encontrar a melhor cotação já alinhada a todas as expectativas e necessidade do usuário;
-                3.	Gerenciar a comissão para os indicadores de seguros.
+            <div className="Regulation-rules-rule">
+              <div className="Regulation-rules-rule-title">1. Definição</div>
+              <div className="Regulation-rules-rule-text">A 4Team é uma maneira simples de conseguir uma grana extra para quem indica seguros para sua rede de amigos e familiares. Juridicamente constituída como uma plataforma, a 4Team é responsável por:</div>
+              <div className="Regulation-rules-rule-text">1.1	Avaliar a entrada de cada membro criando uma comunidade confiável;</div>
+              <div className="Regulation-rules-rule-text">1.2	Encontrar a melhor cotação já alinhada a todas as expectativas e necessidade do usuário;</div>
+              <div className="Regulation-rules-rule-text">1.3	Gerenciar a comissão para os indicadores de seguros.</div>                                                
 
-                2. Comissão por indicação
+              <div className="Regulation-rules-rule-title">2. Comissão por indicação</div>
+              <div className="Regulation-rules-rule-text">A comissão por indicação só será concedida caso a pessoa que recebeu o link, contratar o seguro.</div>
 
-                A comissão por indicação só será concedida caso a pessoa que recebeu o link, contratar o seguro.   
-
-                3. Gestão de usabilidade
-
-                A plataforma é estruturada para que, o usuário só se preocupe em contratar o seguro que ele está realmente precisando.
+              <div className="Regulation-rules-rule-title">3. Gestão de usabilidade</div>
+              <div className="Regulation-rules-rule-text">A plataforma é estruturada para que, o usuário só se preocupe em contratar o seguro que ele está realmente precisando.</div>
+            </div>
           </div>
-
-
-
-
-        
+        </div>
         <Footer/>
-      </div>
       </div>
     )
   }
