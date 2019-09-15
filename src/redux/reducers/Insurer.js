@@ -63,10 +63,30 @@ export const Creators = {
   },
 }
 
-const INITIAL_STATE = {}
+const INITIAL_STATE = {
+  postTrip: null,
+  postLife: null,
+  specificInsurer: null,
+}
 
 export default function Insurer(state = INITIAL_STATE, action) {
+  
   switch (action.type) {
+    case Types.POST_TRIP: 
+    console.log("Insurer POST_TRIP", action.payload.data)
+      return state;
+    break;
+
+    case Types.POST_LIFE: 
+    console.log("Insurer POST_LIFE", action.payload.data)
+      return state;
+    break;
+
+    case Types.GET_INSURER: 
+    console.log("Insurer GET_INSURER", action.payload.data)
+      return state;
+    break;
+    
     default:
       return state
       break

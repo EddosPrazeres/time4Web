@@ -12,6 +12,12 @@ const Routes = props => (
     // Insert views here
 
   <Route 
+    exact path='/ConectionInsurer/insurer/:insurer/indicator/:indicator' 
+    component={ views.ConectionInsurer } 
+  />
+
+
+  <Route 
     exact path='/Regulation' 
     component={ views.Regulation } 
   />
